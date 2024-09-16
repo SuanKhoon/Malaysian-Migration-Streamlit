@@ -70,15 +70,6 @@ total_entries['Percentage Change'] = total_entries[gender_column].pct_change() *
 fig2 = px.line(total_entries, x='Year', y='Percentage Change', markers=True)
 st.plotly_chart(fig2, use_container_width=True)
 
-# 3) Total Foreign Nationals by Year (including males and females)
-st.markdown("### Total Foreign Nationals Entering Malaysia by Year")
-total_nationals = filtered_df.groupby('Year').agg(
-    Total_Arrivals=pd.NamedAgg(column='Arrivals', aggfunc='sum')
-).reset_index()
-fig3 = px.bar(total_nationals, x='Year', y='Total_Arrivals',
-              color_discrete_sequence=['#ff7f0e'])
-st.plotly_chart(fig3, use_container_width=True)
-
 # 4) Total Foreign Nationals by Year (Male + Female)
 st.markdown("### Total Foreign Nationals Entering Malaysia (Male + Female) by Year")
 total_nationals_gender = filtered_df.groupby('Year').agg(
