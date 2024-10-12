@@ -30,6 +30,11 @@ This dashboard aims to provide insights into the total number of foreign entries
 
 ## Installation
 
+**Clone this repository:**
+   ```bash
+   git clone https://github.com/SuanKhoon/Malaysian-Migration-Streamlit.git
+   cd MalaysiaMigrationInsights
+
 To run this dashboard locally, follow the steps below:
 
 1. **Create a virtual environment (optional but recommended):**
