@@ -28,35 +28,6 @@ This Streamlit dashboard enables users to explore and analyze foreign migration 
 
 This dashboard aims to provide insights into the total number of foreign entries into Malaysia and its various states, enabling stakeholders to analyze trends based on gender, country of origin, and other filters.
 
-## Installation
-
-To run this dashboard locally, follow the steps below:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/faisal-saddique/MalaysiaMigrationInsights.git
-   cd MalaysiaMigrationInsights
-   ```
-
-2. **Create a virtual environment (optional but recommended):**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-
-3. **Install the required dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Place the data file (`arrivals_soe.csv`) in the root directory.**
-
-5. **Run the Streamlit app:**
-   ```bash
-   streamlit run main.py
-   ```
-
-6. Open your browser and go to `http://localhost:8501` to view the dashboard.
 
 ## Dependencies
 
